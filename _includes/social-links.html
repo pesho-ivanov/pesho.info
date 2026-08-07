@@ -5,6 +5,12 @@
         </a>
     {% endif %}
 
+    {% if site.wiki %}
+        <a class="link" data-title="wiki" href="{{ site.wiki }}" target="_blank">
+            <svg class="icon icon-book"><use xlink:href="#icon-book"></use></svg>
+        </a>
+    {% endif %}
+
     {% if site.github %}
         <a class="link" data-title="github" href="https://github.com/{{ site.github }}" target="_blank">
             <svg class="icon icon-github"><use xlink:href="#icon-github"></use></svg>
